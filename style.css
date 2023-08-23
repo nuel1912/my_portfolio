@@ -11,6 +11,13 @@ body {
 body::-webkit-scrollbar {
     width: 0;
 }
+hr {
+    margin: 20px auto;
+    background: #020617;
+    width: 80%;
+    height: 2px;
+    border: none;
+}
 header {
     width: 100%;
     min-height: 100vh;
@@ -118,9 +125,15 @@ nav button:hover {
     border: 1px solid #fff;
     font-weight: 700;
 }
+.pic {
+    width: 450px;
+    position: absolute;
+    top: 165px;
+    right: 200px;
+}
 .skills {
     width: 80%;
-    margin: 40px auto;
+    margin: 40px auto 0;
     text-align: center;
     color: #020617;
     /* background: linear-gradient(rgba(2, 6, 23, 0.3), rgba(2, 6,23, 0.3)), url(img/skill.jpg);
@@ -174,7 +187,7 @@ nav button:hover {
 
 .design {
     width: 80%;
-    margin: 80px auto;
+    margin: 40px auto 0;
     text-align: center;
     color: #020617;
     /* background: #faa123; */
@@ -228,26 +241,107 @@ nav button:hover {
 }
 
 
-
-
-
-
-
-
-.pic {
-    width: 450px;
-    position: absolute;
-    top: 165px;
-    right: 200px;
+.contact {
+    width: 100%;
+    margin: 40px auto 0;
+    text-align: center;
+    color: #faa123;
+    background: #020617;
+    padding: 15px;
 }
+.contact h1 {
+    font-size: 40px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+.contact .row {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+.contact-col {
+    flex-basis: 48%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+.contact-col div {
+    display: flex;
+    align-items: center;
+    margin: 18px;
+}
+.contact-col img {
+    width: 30px;
+}
+.contact-col div p {
+    font-size: 18px;
+    margin: auto 10px;
+    padding: 8px 10px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.contact-col input, .contact-col textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    outline: none;
+    border: 1px solid #faa123;
+    background: transparent;
+    color: #faa123;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+::placeholder {
+    color: #888;
+    font-weight: 300;
+}
+.send {
+    width: 100%;
+    /* margin-top: 5px; */
+    /* margin-left: 5px; */
+    padding: 10px;
+    letter-spacing: 1px;
+    font-size: 18px;
+    /* font-weight: 500; */
+    color: #fff;
+    background: transparent;
+    outline: 0;
+    border: 1px solid #faa123;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.send:hover {
+    background: #faa123;
+    color: #020617;
+    border: none;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .socials {
     text-align: center;
-    margin-top: 120px;
+    /* margin-top: 40px; */
+    padding: 0 20px 20px;
 }
 .socials img {
     width: 25px;
     cursor: pointer;
     margin: 0 10px;
+    /* padding: 20px; */
 }
 /* footer {
     background: #faa123;
