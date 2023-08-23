@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    /* text-decoration: none; */
 }
 body {
     background: #bdc9ff;
@@ -108,13 +109,14 @@ nav button:hover {
     background: #faa123;
     outline: 0;
     border: none;
+    cursor: pointer;
     transition: 0.5s;
 }
 .cover button:hover {
     background: #020617;
     color: #fff;
     border: 1px solid #fff;
-    font-weight: 800;
+    font-weight: 700;
 }
 .skills {
     width: 80%;
@@ -236,7 +238,7 @@ nav button:hover {
     width: 450px;
     position: absolute;
     top: 165px;
-    right: 150px;
+    right: 200px;
 }
 .socials {
     text-align: center;
