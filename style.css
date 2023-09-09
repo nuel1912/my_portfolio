@@ -25,7 +25,7 @@ header {
     background-position: center;
     background-size: cover;
     margin: auto;
-    padding: 20px 0px;
+    padding: 10px 0px;
     position: relative;
     overflow: hidden;
 }
@@ -34,17 +34,17 @@ nav {
     /* color: #310000; */
     width: 100%;
     /* margin: auto; */
-    padding: 10px 100px;
+    padding: 5px 100px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    /* justify-content: center; */
 }
 nav img {
     width: 60px;
 }
 nav ul {
     font-size: 16px;
-    flex: 1;
+    /* flex: 1; */
     text-align: center;
 }
 nav ul li {
@@ -69,7 +69,7 @@ nav ul li a:hover {
 nav button {
     /* margin-top: 5px; */
     /* margin-left: 5px; */
-    padding: 12px 25px;
+    padding: 8px 16px;
     letter-spacing: 1px;
     font-size: 18px;
     font-weight: 600;
@@ -88,13 +88,20 @@ nav button:hover {
 }
 .cover {
     margin-top: 7%;
-    max-width: 750px;
-    padding: 10px 100px;
+    /* max-width: 750px; */
+    /* padding: 10px 100px; */
+    width: 80%;
     color: #fff;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto auto;
+}
+.cover .content {
+    margin: 75px 35px 0 0;
 }
 .cover h1 {
     font-size: 45px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 .cover p {
     font-size: 20px;
@@ -127,9 +134,9 @@ nav button:hover {
 }
 .pic {
     width: 450px;
-    position: absolute;
+    /* position: absolute;
     top: 165px;
-    right: 200px;
+    right: 200px; */
 }
 .skills {
     width: 80%;
@@ -186,11 +193,11 @@ nav button:hover {
 
 
 .design {
-    width: 80%;
+    width: 100%;
     margin: 40px auto 0;
     text-align: center;
     color: #020617;
-    /* background: #faa123; */
+    /* background: ; */
 }
 .design h1 {
     font-size: 40px;
@@ -212,6 +219,12 @@ nav button:hover {
     text-decoration: underline;
     text-decoration-color: #faa123;
     text-underline-offset: 3px;
+}
+.design .row {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
 }
 .design-col {
     margin: 20px 15px;
@@ -275,11 +288,12 @@ nav button:hover {
 }
 .contact-col img {
     width: 30px;
+    cursor: pointer;
 }
 .contact-col div p {
     font-size: 18px;
     margin: auto 10px;
-    padding: 8px 10px;
+    padding: 8px 8px;
     letter-spacing: 1px;
     cursor: pointer;
 }
@@ -321,8 +335,57 @@ nav button:hover {
     font-weight: 600;
 }
 
+.try {
+    width: 100%;
+    margin: auto;
+}
+.trys {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto;
+    text-align: center;
+    position: relative;
+}
+/* .try-col {
+    flex-basis: 48%;
+} */
+.try-col h1 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 67px;
+    letter-spacing: -0.07em;
+    text-align: left;
+}
+.text {
+    margin-right: 40px;
+    flex-basis: 60%;
+    text-align: left;
+}
+.try-col span {
+    color: rgba(255, 103, 83);
+}
+.try-col img {
+    width: 50%;
+    position: absolute;
+    right: -68px;
+}
 
-
+.main-btn{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    letter-spacing: -0.015em;
+    text-align: left;
+    color: white;
+    padding: 8px 24px;
+    margin-top: 32px;
+    border-radius: 4px;
+    border: none;
+    background: linear-gradient(85deg, rgba(255, 73, 49), rgba(255, 103, 83));
+}
 
 
 
@@ -333,15 +396,35 @@ nav button:hover {
 
 
 .socials {
-    text-align: center;
-    /* margin-top: 40px; */
+    width: 100%;
+    /* text-align: center; */
+    /* margin: auto; */
     padding: 0 20px 20px;
+    /* background: #020617; */
 }
-.socials img {
+.social-col {
+    /* margin: 20px 15px;
+    padding: 15px 0;
+    background: #bdc9ff;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.3);
+    transition: 0.5s; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+}
+.social-col img {
     width: 25px;
     cursor: pointer;
-    margin: 0 10px;
+    margin: 0 5px;
     /* padding: 20px; */
+}
+.social-col p {
+    font-size: 16px;
+    padding-bottom: 5px;
+    font-weight: 600;
 }
 /* footer {
     background: #faa123;
@@ -370,6 +453,43 @@ footer p {
 
 
 @media (max-width:768px) {
+    nav {
+        flex-direction: column;
+        padding: 5px;
+    }
+    nav ul {
+        font-size: 14px;
+        margin: 5px auto;
+    }
+    nav ul li a {
+        padding: 5px;
+    }
+    nav button {
+        font-size: 14px;
+    }
+    .cover {
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+    }
+    .cover .content {
+        margin: 40px auto;
+        text-align: center;
+    }
+    .cover h1 {
+        font-size: 20px;
+    }
+    .cover p {
+        font-size: 16px;
+    }
+    .cover button {
+        font-size: 16px;
+        margin: 10px auto;
+    }
+    .pic {
+        width: 300px;
+        margin: auto;
+    }
     .row {
         flex-direction: column;
     }
