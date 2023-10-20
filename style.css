@@ -26,7 +26,7 @@ header {
     background-position: center;
     background-size: cover;
     margin: auto;
-    padding: 10px 0px;
+    /* padding: 10px 0px; */
     position: relative;
     overflow: hidden;
 }
@@ -536,11 +536,12 @@ footer p {
         height: 0;
         position: absolute;
         /* padding: 10px 0; */
-        top: 78px;
+        top: 68px;
         left: 0;
         right: 0;
         width: 100vw;
-        background: rgba(10, 10, 10, 0.5);
+        background: rgba(1, 4, 17, 0.9);
+        border-bottom: 1px solid #fff;
         transition: 0.8s;
         overflow: hidden;
     }
@@ -615,5 +616,19 @@ footer p {
     }
     .social-col img {
         width: 24px;
+    }
+}
+
+
+@media screen and (max-width: 401px){
+    .cover {
+        margin: 10px auto 0;
+    }
+    .cover H1 {
+        font-size: 25PX;
+    }
+    .pic {
+        width: 250px;
+        /* display: none; */
     }
 }
