@@ -541,7 +541,7 @@ footer p {
         right: 0;
         width: 100vw;
         background: rgba(1, 4, 17, 0.9);
-        border-bottom: 1px solid #fff;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.8);
         transition: 0.8s;
         overflow: hidden;
     }
@@ -580,24 +580,23 @@ footer p {
         text-align: center;
     }
     .cover h1 {
-        font-size: 35px;
+        font-size: 50px;
     }
     .cover p {
-        font-size: 16px;
-        line-height: 1.5rem;
+        font-size: 30px;
+        line-height: 2.5rem;
         /* max-width: 240px; */
         margin: 10px auto;
     }
     .cover button {
-        width: 30%;
-        font-size: 12px;
+        width: 70%;
+        font-size: 25px;
         padding: 10px 6px;
         text-align: center;
         margin: 5px auto 0;
     }
     .pic {
-        width: 300px;
-        margin: 0;
+        display: none;
     }
     .row {
         flex-direction: column;
@@ -624,11 +623,11 @@ footer p {
     .cover {
         margin: 10px auto 0;
     }
-    .cover H1 {
-        font-size: 25PX;
+    .cover h1 {
+        font-size: 25px;
     }
     .pic {
         width: 250px;
-        /* display: none; */
+        display: none;
     }
 }
