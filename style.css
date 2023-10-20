@@ -107,9 +107,6 @@ nav button:hover {
     align-items: center;
     margin: 50px auto auto;
 }
-.cover .content {
-    /* margin: 75px 35px 0 0; */
-}
 .cover h1 {
     font-size: 45px;
     letter-spacing: 1px;
@@ -583,14 +580,14 @@ footer p {
         font-size: 50px;
     }
     .cover p {
-        font-size: 30px;
+        font-size: 25px;
         line-height: 2.5rem;
         /* max-width: 240px; */
         margin: 10px auto;
     }
     .cover button {
-        width: 70%;
-        font-size: 25px;
+        width: 50%;
+        font-size: 20px;
         padding: 10px 6px;
         text-align: center;
         margin: 5px auto 0;
@@ -615,19 +612,5 @@ footer p {
     }
     .social-col img {
         width: 24px;
-    }
-}
-
-
-@media screen and (max-width: 401px){
-    .cover {
-        margin: 10px auto 0;
-    }
-    .cover h1 {
-        font-size: 25px;
-    }
-    .pic {
-        width: 250px;
-        display: none;
     }
 }
